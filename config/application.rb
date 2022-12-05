@@ -11,6 +11,12 @@ module Photogram
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 7.0
 
+    # Use Vips for processing variants.
+    config.active_storage.variant_processor = :vips
+
+    config.active_storage.variant_processor = :mini_magick
+
+
     # Configuration for the application, engines, and railties goes here.
     #
     # These settings can be overridden in specific environments using the files

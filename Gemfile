@@ -10,10 +10,13 @@ gem "rails", "~> 7.0.4"
 gem "sprockets-rails"
 
 # Use sqlite3 as the database for Active Record
-gem "sqlite3", "~> 1.4"
+#gem "sqlite3", "~> 1.4"
+gem 'pg'
 
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", "~> 5.0"
+
+gem 'image_processing', '~> 1.2'
 
 # Use JavaScript with ESM import maps [https://github.com/rails/importmap-rails]
 gem "importmap-rails"
@@ -21,11 +24,26 @@ gem "importmap-rails"
 # Hotwire's SPA-like page accelerator [https://turbo.hotwired.dev]
 gem "turbo-rails"
 
+gem 'devise'
+
+
+gem 'simple_form'
+
+gem 'bootstrap-sass', '~> 3.3.5'
+
+gem 'sassc-rails', '>= 2.1.0'
+
+gem 'jquery-rails'
+
 # Hotwire's modest JavaScript framework [https://stimulus.hotwired.dev]
 gem "stimulus-rails"
 
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem "jbuilder"
+
+gem "haml"
+
+gem "aws-sdk-s3", require: false
 
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
